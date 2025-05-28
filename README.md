@@ -31,6 +31,7 @@
     * 훈련 세트는 약 6,510개의 VH/VL 쌍 및 Isotype 라벨을 포함하며, Isotype 분포는 IGHM이 매우 우세한 불균형 데이터입니다.
 
 ## 4. 프로젝트 구조
+```text
 Antibody_AI_Project/
 ├── scripts/
 │   ├── 02_특성공학 & 데이터 분할.py
@@ -79,7 +80,7 @@ Antibody_AI_Project/
 │   └── (CD-HIT 임시 파일 등)
 ├── requirement.txt
 └── README.md
-
+```
 **참고**:
 * `data_storage/` 와 `temp_data/` 디렉토리명은 예시이며, 실제로는 각 스크립트에 명시된 `base_dir` 및 `temp_dir` 경로에 해당 데이터가 저장됩니다.
 * 일부 전처리 단계(예: 공개 DB에서 초기 데이터 다운로드, AbNumber 실행)는 본 레포지토리의 스크립트에 포함되어 있지 않을 수 있으며, `antibody_metadata_abnumber.parquet` 파일이 이미 전처리된 상태로 존재한다고 가정합니다.
