@@ -1,0 +1,30 @@
+# Antibody AI Project Requirements
+
+# --- Core Libraries ---
+numpy==2.1.2 # 로그에서 확인된 버전, 단 스크립트 주석에 <2 요구 사항 언급됨 (확인 필요)
+pandas==2.2.3 # 로그에서 확인된 버전
+torch==2.7.0+cu118 # 로그에서 확인된 버전 (CUDA 11.8 환경 가정)
+scikit-learn==1.6.1 # 로그에서 확인된 버전
+pyarrow # Parquet 파일 처리용 (pandas가 요구할 수 있음)
+
+# --- Bioinformatics ---
+biopython==1.85 # 로그에서 확인된 버전
+abnumber # 데이터 전처리(01_final_antibody.ipynb)에 사용됨
+
+
+# --- Imbalanced Data Handling ---
+imbalanced-learn # SMOTE 등 리샘플링용
+
+# --- Reinforcement Learning ---
+stable-baselines3[extra] # PPO 및 기타 RL 요소 + extra 종속성 포함
+gymnasium # RL 환경 구축용
+transformers accelerate
+
+# --- Visualization ---
+matplotlib # 그래프 시각화용
+umap-learn # UMAP 차원 축소용
+
+# --- Optional/Data Gathering (from 01_final_antibody.ipynb) ---
+# requests # 데이터 다운로드용
+# tqdm # 진행 상태 표시용
+# aiohttp # 비동기 HTTP 요청용
